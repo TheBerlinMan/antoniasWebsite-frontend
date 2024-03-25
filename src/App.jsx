@@ -9,6 +9,7 @@ import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import PortfolioManager from './pages/PortfolioManager/PortfolioManager'
+import Photos from './pages/Photos/Photos'
 
 // components
 import NavBar from './components/NavBar/NavBar'
@@ -38,7 +39,8 @@ function App() {
   return (
     <>
 
-      <CtrlPanel />
+      {/* <CtrlPanel /> */}
+      <Photos />
       {/* <NavBar user={user} handleLogout={handleLogout} /> */}
       <Routes>
         <Route path="/" element={<Landing user={user} />} />

@@ -1,7 +1,7 @@
 const PortfolioManager = () => {
   return ( 
     <>
-    hello
+    
     </>
   )
 }
