@@ -1,18 +1,28 @@
 import images from './data'
+import './styles.css'
 
 const Photos = () => {
   console.log(images);
   return (
     <>
+      <div className="content"></div>
+      <div className="photos"></div>
+      <div className="photo-options">
+
+
+      </div>
+      <div className="item">
+      {
+        images.images.map((image, index) => (
+         <img key={index} src={image} alt="photo" /> 
+        )
+        )
+      }
       
-      <img src={images.images[0]} alt="" />
-      <img src={images.images[1]} alt="" />
-      <img src={images.images[2]} alt="" />
-      <img src={images.images[3]} alt="" />
-      <img src={images.images[4]} alt="" />
-      
+
+      </div>
     </>
   )
 }
- 
+
 export default Photos;
