@@ -6,20 +6,18 @@ const Photos = () => {
   return (
     <>
       <div className="content"></div>
-      <div className="photos"></div>
+      
       <div className="photo-options">
 
 
       </div>
-      <div className="item">
+      <div className="photos">
       {
         images.images.map((image, index) => (
          <img key={index} src={image} alt="photo" /> 
         )
         )
       }
-      
-
       </div>
     </>
   )

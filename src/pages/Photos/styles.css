@@ -1,4 +1,11 @@
-.item img{
+.photos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.photos img{
   height: 200px;
   width: 200px;
+  margin: 10px;
 }
