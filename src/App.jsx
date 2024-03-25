@@ -13,6 +13,7 @@ import PortfolioManager from './pages/PortfolioManager/PortfolioManager'
 // components
 import NavBar from './components/NavBar/NavBar'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
+import CtrlPanel from './components/CtrlPanel'
 
 // services
 import * as authService from './services/authService'
@@ -36,7 +37,9 @@ function App() {
 
   return (
     <>
-      <NavBar user={user} handleLogout={handleLogout} />
+
+      <CtrlPanel />
+      {/* <NavBar user={user} handleLogout={handleLogout} /> */}
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
         <Route
